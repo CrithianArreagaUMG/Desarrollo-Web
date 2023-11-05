@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body{
+            background-image: url("fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            justify-content: center;
+            place-items:unset;
+            text-align: center;
+            place-content: center;
+            height: 100vh;
+            display: grid;
+            min-height: 100vh;
+        }
+        div {
+            height: 400px;
+            width: 500px;
+            place-items: center;
+            background-color: transparent;
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            place-content: center;
+            margin-top: 20px;
+            text-align: center;
+        }
+        label{
+            margin: 10px;
+            border-radius: 30px;
+            background-color:aliceblue;
+            width: 210px;
+            height: 40px;
+            box-shadow: 0px 2px 5px black;
+          }
+        input {
+            width: auto;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            background-color: transparent;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: brown;
+            border: none;
+            cursor: pointer;
+            font-family:'Courier New', Courier, monospace;
+            box-shadow: 0px 2px 5px black;
+        }
+        button:hover{
+            background-color:darkblue;
+        }
+        a{
+            font-family:'Courier New', Courier, monospace;
+            margin-top: 10px;
+            font-size:medium;
+            color:whitesmoke;
+            text-shadow: whitesmoke;
+        }
+        a:hover{
+            color:darkblue;
+        }
+</style>
+</head>
+<body>
+    <div>
+        <form>
+            <label>
+                <input type="text"placeholder="First name">
+            </label>
+            <label>
+                <input type="text"placeholder="Last name">
+            </label>
+            <label>
+            <input type="email" placeholder="Email">
+            </label>
+            <label>
+            <input type="password" placeholder="New password">
+            </label>
+            <label>
+            <input type="date">
+            </label>
+            F<input type="checkbox" placeholder="Female">  M<input type="checkbox" placeholder="Male">
+            <a href="#"><button>CREATE ACCOUNT</button></a>
+          <a href="index.html"><h2>RETURN</h2></a>
+        </form>
+    </div>
+</body>
+</html>
