@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Calculadora</h1>
+            <button id="basicas">Operaciones básicas</button>
+            <button id="avanzadas">Operaciones avanzadas</button>
+            <button id="ordenar">Ordenar cadena</button>
+            <br>
+        </div>
+        <div class="basicas">
+            <h3>Operaciones básicas</h3>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <button id="sumar">Sumar</button>
+            <button id="restar">Restar</button>
+            <button id="multiplicar">Multiplicar</button>
+            <button id="dividir">Dividir</button>
+            <p id="resul"></p>
+        </div>
+
+        <div class="avanzadas">
+            <h3>Ingrese una función</h3>
+            <input type="text" id="f" placeholder="x+2">
+            <button onclick="limite()">Calcular límite</button>
+            <button onclick="derivada()">Calcular derivada</button>
+            <p id="respuesta"></p>
+        </div>
+
+        <div class="ordenar">
+            <h3>Ordenar cadena</h3>
+            <textarea id="texto" placeholder="Escribe una cadena"></textarea>
+            <button onclick="izquierdaDerecha()">Ordenar de izquierda a derecha</button>
+            <button onclick="derechaIzquierda()">Ordenar de derecha a izquierda</button>
+            <input type="text" id="caracter" placeholder="Introduce caracteres a eliminar">
+            <button onclick="quitar()">Quitar elemento</button>
+            <button id="revertirQuitarElemento" onclick="restaurar() ">Revertir eliminación</button>
+            <p id="respuest"></p>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>     
+</body>
+</html>
